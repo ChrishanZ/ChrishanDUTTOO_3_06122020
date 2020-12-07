@@ -96,4 +96,145 @@ body {
   font-size: 18px;
 }
 
+.how {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.how__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin: 50px 20px 30px 20px;
+}
+.how__blockinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.how__blockinfo__choose {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 8px -2px gray;
+  width: 80%;
+  height: 75px;
+  border-radius: 20px;
+  margin: 10px;
+  position: relative;
+}
+.how__blockinfo__choose__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356cd;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  top: 24px;
+  left: -15px;
+}
+.how__blockinfo__choose__blocklogo {
+  width: 25%;
+}
+.how__blockinfo__choose__blocklogo__logo {
+  margin: 0px 35px;
+  color: gray;
+}
+.how__blockinfo__choose__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.how__blockinfo__compose {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 8px -2px gray;
+  width: 80%;
+  height: 75px;
+  border-radius: 20px;
+  margin: 10px;
+  position: relative;
+}
+.how__blockinfo__compose__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356cd;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  top: 24px;
+  left: -15px;
+}
+.how__blockinfo__compose__blocklogo {
+  width: 25%;
+}
+.how__blockinfo__compose__blocklogo__logo {
+  margin: 0px 35px;
+  color: gray;
+}
+.how__blockinfo__compose__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.how__blockinfo__eat {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 8px -2px gray;
+  width: 80%;
+  height: 75px;
+  border-radius: 20px;
+  margin: 10px;
+  position: relative;
+}
+.how__blockinfo__eat__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356cd;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  top: 24px;
+  left: -15px;
+}
+.how__blockinfo__eat__blocklogo {
+  width: 25%;
+}
+.how__blockinfo__eat__blocklogo__logo {
+  margin: 0px 35px;
+  color: gray;
+}
+.how__blockinfo__eat__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=style.css.map */
