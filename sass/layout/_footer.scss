@@ -1,0 +1,32 @@
+.footer {
+  background: $colour-footer;
+  height: 210px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  &__blockinfo {
+    margin: 15px 0px 15px 15px;
+    &__blocklogo {
+      display: flex;
+      align-items: center;
+      &__logo {
+        color: white;
+        margin-right: 10px;
+      }
+    }
+    &__title {
+      color: white;
+      font-family: "Shrikhand", cursive;
+      font-weight: 200;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      color: white;
+      font-family: "Robot", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      margin: 5px 0px;
+    }
+  }
+}

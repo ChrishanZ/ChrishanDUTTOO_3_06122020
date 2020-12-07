@@ -27,8 +27,37 @@ body {
   margin-top: 1rem;
 }
 
-.container__location {
+.footer {
+  background: #2f2f2f;
+  height: 210px;
   display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.footer__blockinfo {
+  margin: 15px 0px 15px 15px;
+}
+.footer__blockinfo__blocklogo {
+  display: flex;
+  align-items: center;
+}
+.footer__blockinfo__blocklogo__logo {
+  color: white;
+  margin-right: 10px;
+}
+.footer__blockinfo__title {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer__blockinfo__text {
+  color: white;
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 5px 0px;
 }
 
 .location {
@@ -241,7 +270,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 600px;
+  height: 1270px;
   width: 100%;
   background-color: #f5f5f5;
 }
