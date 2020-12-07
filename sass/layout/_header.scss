@@ -1,0 +1,16 @@
+.header {
+  background: $colour-white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3px;
+  &__logo {
+    width: 50%;
+    margin-top: 1rem;
+  }
+}

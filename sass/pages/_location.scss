@@ -1,0 +1,19 @@
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $colour-grey;
+  height: 45px;
+  &__blockinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 29%;
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
