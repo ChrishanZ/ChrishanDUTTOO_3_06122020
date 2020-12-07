@@ -1,0 +1,44 @@
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $colour-whitegrey;
+  &__blockinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+  }
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 10px 40px;
+  }
+  &__description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 10px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    background-color: $colour-primary;
+    border-radius: 30px;
+    box-shadow: 0 4px 2px -2px gray;
+    height: 60px;
+    width: 250px;
+    &__text {
+      color: $colour-whitegrey;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
