@@ -99,7 +99,7 @@ body {
 .how {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 460px;
 }
 .how__title {
   font-family: "Roboto", sans-serif;
@@ -235,6 +235,78 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 600px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.restaurants__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin: 50px 20px 0px 20px;
+}
+.restaurants__blockinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 20px;
+}
+.restaurants__blockinfo__restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px -2px gray;
+}
+.restaurants__blockinfo__restaurant__img {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants__blockinfo__restaurant__blockdescription {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+}
+.restaurants__blockinfo__restaurant__blockdescription__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+.restaurants__blockinfo__restaurant__blockdescription__description__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.restaurants__blockinfo__restaurant__blockdescription__description__text {
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.restaurants__blockinfo__restaurant__blockdescription__blocklogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurants__blockinfo__restaurant__blockdescription__blocklogo__logo {
+  width: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
