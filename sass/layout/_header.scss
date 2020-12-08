@@ -13,4 +13,24 @@
     width: 50%;
     margin-top: 1rem;
   }
+  &__active {
+    background: $colour-white;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    &__logo {
+      width: 50%;
+      margin-top: 1rem;
+    }
+    &__logoarrow {
+      position: absolute;
+      width: 50%;
+      margin-top: 1rem;
+      top: 25px;
+      left: 20px;
+    }
+  }
 }

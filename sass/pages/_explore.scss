@@ -34,6 +34,10 @@
     box-shadow: 0 4px 2px -2px gray;
     height: 60px;
     width: 250px;
+    &:hover {
+      background-color: lighten($colour-primary, 5);
+      box-shadow: 0 4px 2px 1px gray;
+    }
     &__text {
       color: $colour-whitegrey;
       font-family: "Roboto", sans-serif;

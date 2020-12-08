@@ -1,0 +1,86 @@
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border-top: 4px solid $colour-primary;
+  border-right: 4px solid transparent;
+  animation: spinner 2.5s linear;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(-360deg);
+    visibility: visible;
+  }
+  to {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+
+.display {
+  animation: 2.6s fadeIn;
+  animation-fill-mode: forwards;
+
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.displayentrees {
+  animation: 3s fentrees;
+  opacity: 1;
+}
+
+@keyframes fentrees {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.displayplats {
+  animation: 5s fplats;
+  opacity: 1;
+}
+
+@keyframes fplats {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.displaydesserts {
+  animation: 7s fdesserts;
+  opacity: 1;
+}
+
+@keyframes fdesserts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

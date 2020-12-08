@@ -1,0 +1,190 @@
+.photo {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1070px;
+  background-color: $colour-whitegrey;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  &__blockrestaurantname {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    &__title {
+      font-family: "Shrikhand", cursive;
+      font-size: 22px;
+      margin: 0px 0px 0px 20px;
+    }
+    &__logo {
+      margin: 0px 30px 0px 20px;
+    }
+  }
+  &__carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: calc(100% - 20px);
+    &__blockentrees {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      &__title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        margin: 5px 0px;
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 20px;
+        &__dot {
+          position: absolute;
+          left: 0;
+          z-index: 100;
+          top: 22px;
+          width: 30px;
+          height: 10%; /* or 100px */
+          background: rgb(137, 222, 202);
+        }
+      }
+      &__entree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px -2px grey;
+        margin-bottom: 15px;
+        &__separtor {
+          display: none;
+        }
+        &__survol {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $colour-white;
+          width: 15%;
+          overflow: hidden;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          background: red; /* default color */
+
+          /* "to left" / "to right" - affects initial color */
+          background: linear-gradient(
+              to right,
+              $colour-whitegrey 50%,
+              $colour-tertiary 50%
+            )
+            left;
+          background-size: 200%;
+          transition: 0.5s ease-out;
+        }
+        &:hover {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          width: 100%;
+          height: 60px;
+          border-radius: 10px;
+          box-shadow: 0 3px 8px -2px grey;
+          margin-bottom: 15px;
+          .menu__carte__blockentrees__entree__separator {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 85%;
+          }
+          .menu__carte__blockentrees__entree__survol {
+            display: flex;
+            background-position: right;
+            .icon {
+              animation: rotation 0.5s linear;
+            }
+          }
+        }
+        // .menu__carte__blockentrees__entree {
+        //   display: flex;
+        //   flex-direction: row;
+        //   justify-content: flex-start;
+        //   width: 100%;
+        //   height: 60px;
+        //   border-radius: 10px;
+        //   box-shadow: 0 3px 8px -2px grey;
+        //   margin-bottom: 15px;
+        //   .menu__carte__blockentrees__entree__separator {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+
+        //     width: 85%;
+        //   }
+        //   .menu__carte__blockentrees__entree__survol {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     color: $colour-white;
+        //     width: 15%;
+        //     overflow: hidden;
+        //     border-top-right-radius: 10px;
+        //     border-bottom-right-radius: 10px;
+        //     background-color: $colour-tertiary;
+        //   }
+
+        &__text {
+          margin-left: 10px;
+          margin-bottom: 5px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+        }
+        &__description {
+          display: flex;
+          justify-content: space-between;
+          width: calc(100% - 20px);
+          &__text {
+            margin-left: 10px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 280px;
+            height: 1.2em;
+            white-space: nowrap;
+          }
+          &__price {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  &__order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
