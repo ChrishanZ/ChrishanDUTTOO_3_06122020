@@ -4,21 +4,27 @@
   width: 100%;
 }
 
+.menucontainer {
+  height: 100%;
+  width: 100%;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1070px;
   background-color: $colour-whitegrey;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-
+  position: absolute;
+  top: 230px;
   &__blockrestaurantname {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 70px;
+    margin: 15px 0px;
     &__title {
       font-family: "Shrikhand", cursive;
       font-size: 22px;
@@ -70,7 +76,6 @@
           display: none;
         }
         &__survol {
-          display: flex;
           justify-content: center;
           align-items: center;
           color: $colour-white;
@@ -89,6 +94,9 @@
             left;
           background-size: 200%;
           transition: 0.5s ease-out;
+          .menu__carte__blockentrees__entree__survol__icon {
+            display: none;
+          }
         }
         &:hover {
           display: flex;
@@ -108,39 +116,12 @@
           .menu__carte__blockentrees__entree__survol {
             display: flex;
             background-position: right;
-            .icon {
+            &__icon {
+              display: inline;
               animation: rotation 0.5s linear;
             }
           }
         }
-        // .menu__carte__blockentrees__entree {
-        //   display: flex;
-        //   flex-direction: row;
-        //   justify-content: flex-start;
-        //   width: 100%;
-        //   height: 60px;
-        //   border-radius: 10px;
-        //   box-shadow: 0 3px 8px -2px grey;
-        //   margin-bottom: 15px;
-        //   .menu__carte__blockentrees__entree__separator {
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: center;
-
-        //     width: 85%;
-        //   }
-        //   .menu__carte__blockentrees__entree__survol {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     color: $colour-white;
-        //     width: 15%;
-        //     overflow: hidden;
-        //     border-top-right-radius: 10px;
-        //     border-bottom-right-radius: 10px;
-        //     background-color: $colour-tertiary;
-        //   }
-
         &__text {
           margin-left: 10px;
           margin-bottom: 5px;
@@ -176,7 +157,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0px;
   }
 }
 
