@@ -25,6 +25,9 @@
       border-radius: 20px;
       margin: 10px;
       position: relative;
+      &:hover {
+        background-color: #f4eefe;
+      }
       &__number {
         display: flex;
         justify-content: center;
@@ -66,6 +69,9 @@
       border-radius: 20px;
       margin: 10px;
       position: relative;
+      &:hover {
+        background-color: #f4eefe;
+      }
       &__number {
         display: flex;
         justify-content: center;
@@ -107,6 +113,9 @@
       border-radius: 20px;
       margin: 10px;
       position: relative;
+      &:hover {
+        background-color: #f4eefe;
+      }
       &__number {
         display: flex;
         justify-content: center;
