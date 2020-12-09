@@ -5,6 +5,9 @@
   text-align: center;
   background-color: $colour-grey;
   height: 45px;
+  @media (min-width: 600px) {
+    height: 60px;
+  }
   &__blockinfo {
     display: flex;
     flex-direction: row;
@@ -16,5 +19,9 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    @media (min-width: 801px) {
+      font-size: 18px;
+      margin-left: 15px;
+    }
   }
 }

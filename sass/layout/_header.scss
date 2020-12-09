@@ -1,6 +1,17 @@
 .header {
   background: $colour-white;
+
   height: 5rem;
+
+  @media (min-width: 600px) {
+    height: 7rem;
+  }
+  @media (min-width: 801px) {
+    height: 8rem;
+  }
+  @media (min-width: 1025px) {
+    height: 10rem;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,6 +22,9 @@
   margin-bottom: 3px;
   &__logo {
     width: 50%;
+    @media (min-width: 600px) {
+      width: 400px;
+    }
     margin-top: 1rem;
   }
   &__active {
@@ -21,8 +35,20 @@
     justify-content: center;
     width: 100%;
     position: relative;
+    @media (min-width: 600px) {
+      height: 7rem;
+    }
+    @media (min-width: 801px) {
+      height: 8rem;
+    }
+    @media (min-width: 1025px) {
+      height: 10rem;
+    }
     &__logo {
       width: 50%;
+      @media (min-width: 600px) {
+        width: 400px;
+      }
       margin-top: 1rem;
     }
     &__logoarrow {
